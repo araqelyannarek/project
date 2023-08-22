@@ -1,0 +1,50 @@
+{
+  "name": "serverless-aws-react-saas-front-end",
+  "private": true,
+  "scripts": {
+    "dev": "npm run codegen && next dev",
+    "watch": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "codegen": "amplify codegen && ts-node --skip-project scripts/cleanup-graphql-autogen.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.3",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
+    "@stripe/stripe-js": "^1.49.0",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "aws-amplify": "^4.3.46",
+    "aws-appsync": "^4.1.4",
+    "framer-motion": "^5.5.5",
+    "graphql": "^16.6.0",
+    "isomorphic-fetch": "^3.0.0",
+    "next": "^13.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.8.2",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.1",
+    "slick-carousel": "^1.8.1",
+    "stripe": "^11.14.0",
+    "styled-components": "^5.3.8",
+    "swiper": "^9.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.7",
+    "@types/react": "^18.0.1",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
+}
