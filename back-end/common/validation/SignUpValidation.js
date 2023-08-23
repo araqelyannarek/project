@@ -18,12 +18,14 @@ module.exports = [
     .not()
     .isEmpty()
     .withMessage(validationMessage.required)
-    .matches(/^(?=(.*?[A-Z]){3,}).{3,}$/)
-    .withMessage("Min 3 uppercase letter")
-    .matches(/^(?=(.*[a-z]){3,}).{3,}$/)
-    .withMessage("Min 3 lowercase letter")
-    .matches(/^(?=(.*[\d]){2,}).{2,}$/)
-    .withMessage("Min 2 numbers")
-    .matches(/^(?=(.*[\W]){2,}).{2,}$/)
-    .withMessage("Min 2 special character"),
+    // .matches(/^(?=(.*?[A-Z]){3,}).{3,}$/)
+    // .withMessage("Min 3 uppercase letter")
+    // .matches(/^(?=(.*[a-z]){3,}).{3,}$/)
+    // .withMessage("Min 3 lowercase letter")
+    // .matches(/^(?=(.*[\d]){2,}).{2,}$/)
+    // .withMessage("Min 2 numbers")
+    // .matches(/^(?=(.*[\W]){2,}).{2,}$/)
+    // .withMessage("Min 2 special character")
+    .isLength({ min: 5 })
+  
 ];

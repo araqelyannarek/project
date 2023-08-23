@@ -20,16 +20,18 @@ import {CloseIcon, HamburgerIcon} from "@chakra-ui/icons";
 import MobileNavItem from "../header/menu/MobileNavItem";
 
 export default function Navbar() {
+    const routerState = useRouter();
 
     const { isOpen, onToggle, onOpen } = useDisclosure();
 
-    const [username, setUsername] = useState("");   
-    
+    const [username, setUsername] = useState<string | null>(null);  
+
+
     useEffect(() => {
         let user = localStorage.getItem("user_name");
-        setUsername(user);
-    }, []);
-
+            setUsername(user);
+    }, [routerState]);
+   
     const router = useRouter();
     const signInPage = () => {
         router.push('/signin');

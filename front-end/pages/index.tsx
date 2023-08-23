@@ -3,7 +3,7 @@ import WelcomeUser from "../components/user-info/WelcomeUser";
 import { Center, Spinner } from '@chakra-ui/react';
 
 export default function Index() {
-    const [username, setUsername] = useState("");
+    const [username, setUsername] = useState<string|null>("");
     useEffect(() => {
         let user = localStorage.getItem("user_token");
         setUsername(user)

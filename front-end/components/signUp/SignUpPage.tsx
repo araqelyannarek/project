@@ -17,18 +17,23 @@ import {
 
 import React, {useEffect, useState, useRef } from 'react';
 import NextLink from 'next/link';
-import { Auth } from 'aws-amplify';
 import { useRouter } from 'next/router';
-//import Recaptcha from "../reCAPTCHA/Recaptcha";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const SignUp = () => {
     const [displayName, setDisplayName] = useState({ value: '', isValid: true });
     const [email, setEmail] = useState({ value: '', isValid: true });
     const [password, setPassword] = useState({ value: '', isValid: true });
+    const [errorMessage, setErrorMessage] = useState({
+        displayNameError:"",
+        emailError:"",
+        passwordError:"",
+        recaptchaError:""
+    });
+
     const [userToken, setUserToken] = useState("");
 
-    const recaptchaRef = useRef(null);    
+    const recaptchaRef = useRef<ReCAPTCHA>(null);    
 
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
@@ -44,30 +49,6 @@ const SignUp = () => {
     const setInput = (setter: (inp: { value: string; isValid: boolean }) => void) => (e: React.ChangeEvent<HTMLInputElement>) => {
         setter({ value: e.target.value, isValid: true });
     }
-
-    const handleSignUp = async () => {
-        if (!displayName.value) {
-            setDisplayName({ value: '', isValid: false });
-            return;
-        }
-
-        if (!email.value) {
-            setEmail({ value: '', isValid: false });
-            return;
-        }
-
-        if (!password.value) {
-            setPassword({ value: '', isValid: false });
-            return;
-        }        
-        setIsLoading(true);
-        await fetchData();    
-        
-        setIsLoading(false);
-        router.push('/user-profile');
-        localStorage.setItem("token", userToken)
-    };
-    
     const fetchData = async() => {
         if(!recaptchaRef.current) return 
 
@@ -94,9 +75,33 @@ const SignUp = () => {
         if(result.data.token){
             setUserToken(result.data.token)
         }
-    }
+    }    
+    const handleSignUp = async () => {        
+        if (displayName.value.length<3) {
+            setErrorMessage({...errorMessage, displayNameError: "Please enter at least 3 characters."})
+            return;
+        }
 
-    const onReCAPTCHAChange = (captchaCode) => {
+        if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.value)) {
+            setErrorMessage({...errorMessage, emailError: "Please enter a valid email address."})
+            return;
+        }
+
+        if (password.value.length<5) {
+            setErrorMessage({...errorMessage, passwordError: "Please enter a min 5 character"})
+            return;
+        }
+        setIsLoading(true);
+        await fetchData();    
+        
+        setIsLoading(false);
+        router.push('/user-profile');
+
+        localStorage.setItem("token", userToken)
+    };
+    
+    
+    const onReCAPTCHAChange = (captchaCode:any) => {
         if(!captchaCode) {
             return;
         }
@@ -129,7 +134,7 @@ const SignUp = () => {
                                     onChange={setInput(setDisplayName)}
                                     isInvalid={!displayName.isValid}
                                 />
-                                {!displayName.value ? <Text color={'red.500'} fontSize={12}>This field is required</Text> : <Text ></Text> }
+                                <Text color={'red.500'}>{errorMessage.displayNameError}</Text>
                             </FormControl>
                              <FormControl id="email" isRequired>
                                 <FormLabel>Email</FormLabel>
@@ -139,7 +144,7 @@ const SignUp = () => {
                                     onChange={setInput(setEmail)}
                                     isInvalid={!email.isValid}
                                 />
-                                 {!email.value ? <Text color={'red.500'} fontSize={12}>This field is required</Text> : <Text ></Text> }
+                                <Text color={'red.500'}>{errorMessage.emailError}</Text>
                             </FormControl>
                             <FormControl id="password" isRequired>
                                 <FormLabel>Password</FormLabel>
@@ -152,6 +157,7 @@ const SignUp = () => {
                                     />
                                 </InputGroup>
                                 {!password.value ? <Text color={'red.500'} fontSize={12}>This field is required</Text> : <Text ></Text> }
+                                <Text color={'red.500'}>{errorMessage.passwordError}</Text>
                             </FormControl>
 
                             <Stack direction={{ base: 'column', sm: 'row' }} align={'start'} justify={'space-between'}>

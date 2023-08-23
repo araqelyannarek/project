@@ -50,12 +50,17 @@ const SignIn = () => {
             body: JSONdata,
         }
         const response = await fetch(endpoint, options);
-        const result = await response.json();
+        const result = await response.json();        
+        
+        if(result.success === false) {
+            setErrorMessage("Incorrect email and/or password");
+            return
+        }
 
         if(result.data.token){
             setUserToken(result.data.token);
             setUserName(result.data.user.name);
-        }        
+        }
     }
 
     const handleSignIn = async () => {
@@ -72,9 +77,9 @@ const SignIn = () => {
         setIsLoading(true);
 
         await fetchData();
-
+        
         setIsLoading(false);
-        router.push('/user-profile');
+        router.push('/user-profile');  
     };
 
     return (
@@ -97,6 +102,7 @@ const SignIn = () => {
                                 onChange={setInput(setPassword)}
                                 isInvalid={!password.isValid}
                             />
+                            <Text color={'red.500'}>{errorMessage}</Text>
                         </FormControl>children
                         <Stack spacing={10}>
                             <Stack direction={{ base: 'column', sm: 'row' }} align={'start'} justify={'space-between'}>
@@ -108,13 +114,10 @@ const SignIn = () => {
                                 bg={'#255DB1'}
                                 color={'white'}
                                 _hover={{ bg: '#3D7DD6' }}
-                            >
+                             >
                                 Sign in
                             </Button>
-                        </Stack>
-                        <Text color={'red.500'}>
-                            {errorMessage}
-                        </Text>
+                        </Stack>                        
                     </Stack>
                 </Box>
             </Stack>

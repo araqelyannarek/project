@@ -3,8 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function Recaptcha() {
     const [recaptcha, setRecaptcha] = useState("");
-    function onChange(value) {
-        console.log("Captcha value:", value);
+    function onChange() {
     }
 
     return (
