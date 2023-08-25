@@ -31,7 +31,8 @@ export default function SliderImage() {
                             height={'120'}
                             width={'100'}
                             rounded={'xl'}
-                            src={'https://vdeskworks.com/content/images/webp/support-legacy-apps-icon.webp'}
+                            src={'https://vdeskworks.com/content/images/webp/support-legacy-apps-icon.webp'}                            
+                            alt=""
                         />
                     </Box>
                     <Stack pt={20} align={'center'}>
@@ -70,7 +71,8 @@ export default function SliderImage() {
                             height={'120'}
                             width={'100'}
                             rounded={'xl'}
-                            src={'https://icons-for-free.com/iconfiles/icns/512/layers-1320567789544724344.icns'}
+                            src={'https://icons-for-free.com/iconfiles/icns/512/layers-1320567789544724344.icns'}                            
+                            alt=""
                         />
                     </Box>
                     <Stack pt={20} align={'center'}>
@@ -109,7 +111,8 @@ export default function SliderImage() {
                             height={'120'}
                             width={'100'}
                             rounded={'xl'}
-                            src={'https://vdeskworks.com/content/images/webp/cloud-icon.webp'}
+                            src={'https://vdeskworks.com/content/images/webp/cloud-icon.webp'}                            
+                            alt=""
                         />
                     </Box>
                     <Stack pt={20} align={'center'}>
@@ -149,6 +152,7 @@ export default function SliderImage() {
                             width={'100'}
                             rounded={'xl'}
                             src={'https://icones.pro/wp-content/uploads/2021/05/symbole-du-globe-gris.png'}
+                            alt=""
                         />
                     </Box>
                     <Stack pt={20} align={'center'}>

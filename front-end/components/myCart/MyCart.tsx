@@ -15,8 +15,10 @@ import {
 import React, {useEffect, useState} from 'react';
 import {useRouter} from "next/router";
 import { DeleteIcon } from '@chakra-ui/icons';
+import { priceDataType } from '../../data';
 
-function MyCart({data}) {
+const MyCart:React.FC<{ data: priceDataType }> = ({data}) => {
+    
     const [newData, setNewData] = useState({})
     useEffect(() => {
         setNewData(data)
@@ -84,7 +86,7 @@ function MyCart({data}) {
             </Box>
 
             <Text textAlign={'center'}>
-                In order to complete your purchase, you'll need to login or create an account. Don't worry, it won't take long!
+                In order to complete your purchase, you&apos;ll need to login or create an account. Don&apos;t worry, it won&apos;t take long!
             </Text>
             <Stack spacing={0} align={'center'}>
                 <Button

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon, Tab, TabList, TabPanels, TabPanel, Tabs, useColorModeValue, Text} from "@chakra-ui/react";
+import {Icon, Tab, TabList, TabPanels, TabPanel, Tabs, Text} from "@chakra-ui/react";
 import PaymentInfoUser from "../paymentInfo/PaymentInfoUser";
 import ManageAccount from "./ManageAccount";
 import {IconType} from "react-icons";
@@ -9,6 +9,7 @@ import {MdPayment} from "react-icons/md";
 interface LinkItemProps {
     name: string;
     icon: IconType;
+    href?: string
 }
 
 const LinkItems: Array<LinkItemProps> = [
@@ -59,7 +60,7 @@ function UserPage() {
                         fontWeight={'800'}
                         fontSize={'xl'}
                         my={6}
-                        bg={useColorModeValue('blue.50', 'blue.900')}
+                        bg={'blue.50'}
                         p={2}
                         width={'200px'}
                         alignSelf={'flex-start'}

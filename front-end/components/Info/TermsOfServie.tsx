@@ -9,21 +9,21 @@ function TermsOfService() {
 
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Text as="p" fontSize="lg">
-                        These terms of service outline the rules and regulations for the use of Connect2HQ's Website.
+                        These terms of service outline the rules and regulations for the use of Connect2HQ&apos;s Website.
                     </Text>
                     <br/>
                     <Text as="p" fontSize="lg">
-                        By accessing this website we assume you accept these terms of service in full. Do not continue to use Connect2HQ's website if you do not accept all of the terms of service stated on this page.
+                        By accessing this website we assume you accept these terms of service in full. Do not continue to use Connect2HQ&apos;s website if you do not accept all of the terms of service stated on this page.
                     </Text>
                     <Text as="p" fontSize="lg">
-                        The following terminology applies to these Terms of Service, Privacy Statement and Disclaimer Notice and any or all Agreements: "Client", "You" and "Your" refers to you, the person accessing this website and accepting the Company's terms of service. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services/products, in accordance with and subject to, prevailing law of . Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+                        The following terminology applies to these Terms of Service, Privacy Statement and Disclaimer Notice and any or all Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person accessing this website and accepting the Company&apos;s terms of service. &quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client&apos;s needs in respect of provision of the Company&apos;s stated services/products, in accordance with and subject to, prevailing law of . Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.
                     </Text>
                 </VStack>
 
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>Cookies</Heading>
                     <Text as="p" fontSize="lg">
-                        We employ the use of cookies. By using Connect2HQ's website you consent to the use of cookies in accordance with Connect2HQ's privacy policy.
+                        We employ the use of cookies. By using Connect2HQ&apos;s website you consent to the use of cookies in accordance with Connect2HQ&apos;s privacy policy.
                     </Text>
 
                     <Text as="p" fontSize="lg">
@@ -34,7 +34,7 @@ function TermsOfService() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>License</Heading>
                     <Text as="p" fontSize="lg">
-                        Unless otherwise stated, Connect2HQ and/or it's licensors own the intellectual property rights for all material on Connect2HQ. All intellectual property rights are reserved. You may view and/or print pages from Connect2HQ.com for your own personal use subject to restrictions set in these terms of service.
+                        Unless otherwise stated, Connect2HQ and/or it&apos;s licensors own the intellectual property rights for all material on Connect2HQ. All intellectual property rights are reserved. You may view and/or print pages from Connect2HQ.com for your own personal use subject to restrictions set in these terms of service.
                     </Text>
                     <Text as="p" fontSize="md">
                         <Text fontWeight={400}>1. Republish material from Connect2HQ.com </Text>
@@ -48,7 +48,7 @@ function TermsOfService() {
                     <Heading as="h5" fontWeight={700}>User Comments</Heading>
                     <Text as="p" fontSize="md">
                         <Text fontWeight={400}>1. This Agreement shall begin on the date hereof. </Text>
-                        <Text fontWeight={400}>2. Certain parts of this website offer the opportunity for users to post and exchange opinions, information, material and data ('Comments') in areas of the website. Connect2HQ does not screen, edit, publish or review Comments prior to their appearance on the website and Comments do not reflect the views or opinions of Connect2HQ, its agents or affiliates. Comments reflect the view and opinion of the person who posts such view or opinion. To the extent permitted by applicable laws Connect2HQ shall not be responsible or liable for the Comments or for any loss cost, liability, damages or expenses caused and or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website. </Text>
+                        <Text fontWeight={400}>2. Certain parts of this website offer the opportunity for users to post and exchange opinions, information, material and data (&apos;Comments&apos;) in areas of the website. Connect2HQ does not screen, edit, publish or review Comments prior to their appearance on the website and Comments do not reflect the views or opinions of Connect2HQ, its agents or affiliates. Comments reflect the view and opinion of the person who posts such view or opinion. To the extent permitted by applicable laws Connect2HQ shall not be responsible or liable for the Comments or for any loss cost, liability, damages or expenses caused and or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website. </Text>
                         <Text fontWeight={400}>
                             3. Connect2HQ reserves the right to monitor all Comments and to remove any Comments which it considers in its absolute discretion to be inappropriate, offensive or otherwise in breach of these Terms of Service.
                         </Text>
@@ -85,7 +85,7 @@ function TermsOfService() {
                             <Text ml={4}  fontWeight={400}>4. Online directory distributors when they list us in the directory may link to our Web site in the same manner as they hyperlink to the Web sites of other listed businesses; and </Text>
                             <Text ml={4}  fontWeight={400}>5. Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site. </Text>
                         </Text>
-                        <Text fontWeight={400}>2. These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site. </Text>
+                        <Text fontWeight={400}>2. These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party&apos;s site. </Text>
                         <Text fontWeight={400}>
                             3. We may consider and approve in our sole discretion other link requests from the following types of organizations:
                             <Text fontWeight={400}>
@@ -103,7 +103,7 @@ function TermsOfService() {
                         7. educational institutions and trade associations.
                         We will approve link requests from these organizations if we determine that: (a) the link would not reflect unfavorably on us or our accredited businesses (for example, trade associations or other organizations representing inherently suspect types of business, such as work-at-home opportunities, shall not be allowed to link); (b)the organization does not have an unsatisfactory record with us; (c) the benefit to us from the visibility associated with the hyperlink outweighs the absence of Connect2HQ; and (d) where the link is in the context of general resource information or is otherwise consistent with editorial content in a newsletter or similar product furthering the mission of the organization.
                         <br/>
-                        These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and it products or services; and (c) fits within the context of the linking party's site.
+                        These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and it products or services; and (c) fits within the context of the linking party&apos;s site.
                         <br/>
                         If you are among the organizations listed in paragraph 2 above and are interested in linking to our website, you must notify us by sending an e-mail to
                         <Link
@@ -120,8 +120,8 @@ function TermsOfService() {
                         <Text ml={4} fontWeight={400}>1. By use of our corporate name; or </Text>
                         <Text ml={4}  fontWeight={400}>2. By use of the uniform resource locator (Web address) being linked to; or</Text>
                         <Text ml={4}  fontWeight={400}>
-                            3. By use of any other description of our Web site or material being linked to that makes sense within the context and format of content on the linking party's site.
-                            <br/>No use of Connect2HQ's logo or other artwork will be allowed for linking absent a trademark license agreement.
+                            3. By use of any other description of our Web site or material being linked to that makes sense within the context and format of content on the linking party&apos;s site.
+                            <br/>No use of Connect2HQ&apos;s logo or other artwork will be allowed for linking absent a trademark license agreement.
                         </Text>
                     </Text>
                 </VStack>
@@ -180,7 +180,7 @@ function TermsOfService() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}> Indemnity </Heading>
                     <Text as="p" fontSize="lg">
-                        You agree to defend, indemnify and hold Connect2HQ and its affiliate and related companies harmless from any and all liabilities, costs and expenses, including reasonable attorneys' fees, related to any violation of this Agreement by you or users of your account, or in connection with the use of the Connect2HQ sites or the Internet or the placement or transmission of any message, information, software or other materials on the Connect2HQ sites or on the Internet by you or users of your account.
+                        You agree to defend, indemnify and hold Connect2HQ and its affiliate and related companies harmless from any and all liabilities, costs and expenses, including reasonable attorneys&apos; fees, related to any violation of this Agreement by you or users of your account, or in connection with the use of the Connect2HQ sites or the Internet or the placement or transmission of any message, information, software or other materials on the Connect2HQ sites or on the Internet by you or users of your account.
                     </Text>
                 </VStack>
 

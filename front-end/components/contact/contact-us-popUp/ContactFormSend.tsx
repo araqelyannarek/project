@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
     Flex,
     Box,
@@ -9,61 +9,27 @@ import {
     FormLabel,
     Input,
     InputGroup,
-    InputLeftElement,
-    Textarea,
+    InputLeftElement
 } from '@chakra-ui/react';
 import {  MdOutlineEmail } from 'react-icons/md';
 import { BsPerson } from 'react-icons/bs';
-import Amplify, {Auth} from "aws-amplify";
-import amplifyConfig from "../../../deployment/amplify-config";
-import GraphQLRequest, { API } from 'aws-amplify';
-import {getCognitoUser} from "../../../graphql/queries";
-import {gql, useLazyQuery, useQuery} from "@apollo/client";
+import { useForm } from 'react-hook-form'
 
-Amplify.configure(amplifyConfig);
 
-export default function contact() {
-    const inputsRef: any = useRef({});
+const Contact = () =>  {
 
-    const resetContactForm = () => {
-        const {name, bname ,email, message} = inputsRef.current;
-        email.value = "";
-        bname.value = "";
-        name.value = "";
-        message.value = "";
-    }
+    const { register, handleSubmit, formState } = useForm({
+        defaultValues: {
+            name: '',
+            businesName: '',
+            email: '',
+            message: '',
+        },
+    })
 
-    async function submitNewContact() {
-        const {
-            name,
-            bname,
-            email,
-            message,
-        } = inputsRef.current;
-
-        const data = await API.graphql({
-            query: getCognitoUser,
-            variables: {
-                name: name.value,
-                bname: bname.value,
-                email: email.value,
-                message: message.value
-            },
-        });
-        console.log('data ', data);
-    }
-
-    async function submitNewContact2() {
-        const {
-            name,
-            bname,
-            email,
-            message,
-        } = inputsRef.current;
-
-        const { loading, error, data } = useQuery<any>(gql(getCognitoUser));
-        console.log(loading, error, data, 'data');
-    }
+    const onSubmit = (data: any) => {
+        console.log(data); 
+    };
 
     return (
         <Box
@@ -76,67 +42,62 @@ export default function contact() {
                 <Box p={4} bg="white" width={'full'} borderRadius="lg">
                     <Box my={8} width={'full'} color="#0B0E3F">
                         <VStack spacing={5}>
+                            <form onSubmit={handleSubmit(onSubmit)}>
                             <Flex gap={4}>
                                 <FormControl id="name">
                                     <FormLabel>Name</FormLabel>
                                     <InputGroup >
-                                        <InputLeftElement
-                                            pointerEvents="none"
-                                            children={<BsPerson color="gray.800" />}
-                                        />
-                                        <Input type="text" size="md" ref={(ref) => inputsRef.current.name = ref}/>
+                                        <InputLeftElement pointerEvents="none">
+                                            <BsPerson color="gray.800" />
+                                        </InputLeftElement>
+
+                                        <Input {...register('name')} type="text" size="md"/>
+                                        
                                     </InputGroup>
                                 </FormControl>
-                                <FormControl id="name">
+                                <FormControl id="email">
                                     <FormLabel>Email Adress</FormLabel>
                                     <InputGroup borderColor="#E0E1E7">
-                                        <InputLeftElement
-                                            pointerEvents="none"
-                                            children={<MdOutlineEmail color="gray.800" />}
-                                        />
-                                        <Input
-                                            ref={(ref) => inputsRef.current.email = ref}
-                                            type="text"
-                                            size="md"
-                                        />
+                                        <InputLeftElement pointerEvents="none">
+                                            <MdOutlineEmail color="gray.800" />
+                                        </InputLeftElement>
+
+                                        <Input {...register('email')} type="text" size="md"/>
                                     </InputGroup>
                                 </FormControl>
                             </Flex>
-                            <FormControl id="name">
+                            <FormControl id="businesName">
                                 <FormLabel>Business Name</FormLabel>
                                 <InputGroup borderColor="#E0E1E7">
-                                    <InputLeftElement
-                                        pointerEvents="none"
-                                        children={<BsPerson color="gray.800" />}
-                                    />
-                                    <Input
-                                        ref={(ref) => inputsRef.current.bname = ref}
-                                        type="text"
-                                        size="md"
-                                    />
+                                    <InputLeftElement pointerEvents="none" >
+                                        <BsPerson color="gray.800" />
+                                    </InputLeftElement>
+
+                                    <Input {...register('businesName')} type="text" size="md" />
                                 </InputGroup>
                             </FormControl>
-                            <FormControl id="name">
+                            <FormControl id="message">
                                 <FormLabel>Message</FormLabel>
-                                <Textarea
+                                <Input
+                                    {...register('message')}
                                     borderColor="gray.300"
                                     _hover={{ borderRadius: 'gray.300'}}
                                     placeholder="message"
-                                    ref={(ref) => inputsRef.current.message = ref}
+                                    type="textarea"                             
                                 />
                             </FormControl>
                             <FormControl id="name" textAlign={'right'} float="right">
                                 <Button
+                                    type="submit"
                                     variant="solid"
                                     bg="#255DB1"
                                     color="white"
                                     _hover={{bg: "blue.600"}}
-                                    // onClick={submitNewContact}
-                                    onClick={submitNewContact2}
                             >
                                     Send Message
                                 </Button>
                             </FormControl>
+                            </form>
                         </VStack>
                     </Box>
                 </Box>
@@ -144,3 +105,5 @@ export default function contact() {
         </Box>
     );
 }
+
+export default  Contact; 

@@ -18,7 +18,7 @@ function PrivacyPolicy() {
                             mx={2}
                         >
                             Connect2HQ.com
-                        </Link> (hereinafter, "us", "we", or "Connect2HQ.com"). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy ("Privacy Policy") to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.
+                        </Link> (`hereinafter, &quot;us&quot;, &quot;we&quot;, or &quot;Connect2HQ.com&quot;). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy (&quot;Privacy Policy&quot;) to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.`
                     </Text>
                     <br/>
                     <Text as="p" fontSize="lg">
@@ -47,7 +47,7 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>1. Website Visitors</Heading>
                     <Text as="p" fontSize="lg">
-                        Like most website operators, Connect2HQ collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Connect2HQ's purpose in collecting non-personally identifying information is to better understand how Connect2HQ's visitors use its website. From time to time, Connect2HQ may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.
+                        Like most website operators, Connect2HQ collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Connect2HQ&apos;s purpose in collecting non-personally identifying information is to better understand how Connect2HQ&apos;s visitors use its website. From time to time, Connect2HQ may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.
                     </Text>
 <br/>
                     <Text as="p" fontSize="lg">
@@ -59,7 +59,7 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>2. Personally-Identifying Information</Heading>
                     <Text as="p" fontSize="lg">
-                        Certain visitors to Connect2HQ's websites choose to interact with Connect2HQ in ways that require Connect2HQ to gather personally-identifying information. The amount and type of information that Connect2HQ gathers depends on the nature of the interaction. For example, we ask visitors who leave a comment at https://Connect2HQ.com to provide a username and email address.
+                        Certain visitors to Connect2HQ&apos;s websites choose to interact with Connect2HQ in ways that require Connect2HQ to gather personally-identifying information. The amount and type of information that Connect2HQ gathers depends on the nature of the interaction. For example, we ask visitors who leave a comment at https://Connect2HQ.com to provide a username and email address.
                     </Text>
                         <Link color={'blue.600'}>Back to table of contents</Link>
                 </VStack>
@@ -67,7 +67,7 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>3. Links To External Sites</Heading>
                     <Text as="p" fontSize="lg">
-                        Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy and terms of service of every site you visit.
+                        Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party&apos;s site. We strongly advise you to review the Privacy Policy and terms of service of every site you visit.
                     </Text>
 
                     <Text as="p" fontSize="lg">
@@ -79,11 +79,11 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>4. Protection of Certain Personally-Identifying Information</Heading>
                     <Text as="p" fontSize="lg">
-                        Connect2HQ discloses potentially personally-identifying and personally-identifying information only to those of its employees, contractors and affiliated organizations that (i) need to know that information in order to process it on Connect2HQ's behalf or to provide services available at Connect2HQ's website, and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and affiliated organizations may be located outside of your home country; by using Connect2HQ's website, you consent to the transfer of such information to them. Connect2HQ will not rent or sell potentially personally-identifying and personally-identifying information to anyone. Other than to its employees, contractors and affiliated organizations, as described above, Connect2HQ discloses potentially personally-identifying and personally-identifying information only in response to a subpoena, court order or other governmental request, or when Connect2HQ believes in good faith that disclosure is reasonably necessary to protect the property or rights of Connect2HQ, third parties or the public at large.
+                        Connect2HQ discloses potentially personally-identifying and personally-identifying information only to those of its employees, contractors and affiliated organizations that (i) need to know that information in order to process it on Connect2HQ&apos;s behalf or to provide services available at Connect2HQ&apos;s website, and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and affiliated organizations may be located outside of your home country; by using Connect2HQ&apos;s website, you consent to the transfer of such information to them. Connect2HQ will not rent or sell potentially personally-identifying and personally-identifying information to anyone. Other than to its employees, contractors and affiliated organizations, as described above, Connect2HQ discloses potentially personally-identifying and personally-identifying information only in response to a subpoena, court order or other governmental request, or when Connect2HQ believes in good faith that disclosure is reasonably necessary to protect the property or rights of Connect2HQ, third parties or the public at large.
                     </Text>
 <br/>
                     <Text as="p" fontSize="lg">
-                        If you are a registered user of https://Connect2HQ.com and have supplied your email address, Connect2HQ may occasionally send you an email to tell you about new features, solicit your feedback, or just keep you up to date with what's going on with Connect2HQ and our products. We primarily use our blog to communicate this type of information, so we expect to keep this type of email to a minimum. If you send us a request (for example via a support email or via one of our feedback mechanisms), we reserve the right to publish it in order to help us clarify or respond to your request or to help us support other users. Connect2HQ takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of potentially personally-identifying and personally-identifying information.
+                        If you are a registered user of https://Connect2HQ.com and have supplied your email address, Connect2HQ may occasionally send you an email to tell you about new features, solicit your feedback, or just keep you up to date with what&apos;s going on with Connect2HQ and our products. We primarily use our blog to communicate this type of information, so we expect to keep this type of email to a minimum. If you send us a request (for example via a support email or via one of our feedback mechanisms), we reserve the right to publish it in order to help us clarify or respond to your request or to help us support other users. Connect2HQ takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of potentially personally-identifying and personally-identifying information.
                     </Text>
                     <Link color={'blue.600'}>Back to table of contents</Link>
                 </VStack>
@@ -99,15 +99,15 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>6. Cookies</Heading>
                     <Text as="p" fontSize="lg">
-                        To enrich and perfect your online experience, Connect2HQ uses "Cookies", similar technologies and services provided by others to display personalized content, appropriate advertising and store your preferences on your computer.
+                        To enrich and perfect your online experience, Connect2HQ uses &quot;Cookies&quot;, similar technologies and services provided by others to display personalized content, appropriate advertising and store your preferences on your computer.
                     </Text>
 <br/>
                     <Text as="p" fontSize="lg">
-                        A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's browser provides to the website each time the visitor returns. Connect2HQ uses cookies to help Connect2HQ identify and track visitors, their usage of https://Connect2HQ.com, and their website access preferences. Connect2HQ visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using Connect2HQ's websites, with the drawback that certain features of Connect2HQ's websites may not function properly without the aid of cookies.
+                        A cookie is a string of information that a website stores on a visitor&apos;s computer, and that the visitor&apos;s browser provides to the website each time the visitor returns. Connect2HQ uses cookies to help Connect2HQ identify and track visitors, their usage of https://Connect2HQ.com, and their website access preferences. Connect2HQ visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using Connect2HQ&apos;s websites, with the drawback that certain features of Connect2HQ&apos;s websites may not function properly without the aid of cookies.
                     </Text>
 <br/>
                     <Text as="p" fontSize="lg">
-                        By continuing to navigate our website without changing your cookie settings, you hereby acknowledge and agree to Connect2HQ's use of cookies.
+                        By continuing to navigate our website without changing your cookie settings, you hereby acknowledge and agree to Connect2HQ&apos;s use of cookies.
                     </Text>
                     <Link color={'blue.600'}>Back to table of contents</Link>
                 </VStack>
@@ -115,7 +115,7 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>7. E-commerce</Heading>
                     <Text as="p" fontSize="lg">
-                        Those who engage in transactions with Connect2HQ – by purchasing Connect2HQ's services or products, are asked to provide additional information, including as necessary the personal and financial information required to process those transactions. In each case, Connect2HQ collects such information only insofar as is necessary or appropriate to fulfill the purpose of the visitor's interaction with Connect2HQ. Connect2HQ does not disclose personally-identifying information other than as described below. And visitors can always refuse to supply personally-identifying information, with the caveat that it may prevent them from engaging in certain website-related activities.
+                        Those who engage in transactions with Connect2HQ – by purchasing Connect2HQ&apos;s services or products, are asked to provide additional information, including as necessary the personal and financial information required to process those transactions. In each case, Connect2HQ collects such information only insofar as is necessary or appropriate to fulfill the purpose of the visitor&apos;s interaction with Connect2HQ. Connect2HQ does not disclose personally-identifying information other than as described below. And visitors can always refuse to supply personally-identifying information, with the caveat that it may prevent them from engaging in certain website-related activities.
                     </Text>
                     <Link color={'blue.600'}>Back to table of contents</Link>
                 </VStack>
@@ -123,7 +123,7 @@ function PrivacyPolicy() {
                 <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
                     <Heading as="h5" fontWeight={700}>8. Privacy Policy Changes</Heading>
                     <Text as="p" fontSize="lg">
-                        Although most changes are likely to be minor, Connect2HQ may change its Privacy Policy from time to time, and in Connect2HQ's sole discretion. Connect2HQ encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
+                        Although most changes are likely to be minor, Connect2HQ may change its Privacy Policy from time to time, and in Connect2HQ&apos;s sole discretion. Connect2HQ encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
                     </Text>
                     <Link color={'blue.600'}>Back to table of contents</Link>
                 </VStack>

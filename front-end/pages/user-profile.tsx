@@ -1,18 +1,17 @@
 import {NextPage} from "next";
-import { useGetUser } from '../hooks/useSyncUser';
 import WelcomeUser from "../components/user-info/WelcomeUser";
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 
 const User: NextPage = () => {
+    const [userName, setUsername] = useState("");
 
-    let username;
-    
     useEffect(() => {
-        // getUser();
-        username = localStorage.getItem("user_name")
-    }, []);
+      const user = localStorage.getItem("user_name")
+      setUsername(user || ''); 
+    }, [])
+  
 
-    return ( <WelcomeUser userInfo={username?username:""}/> )
+    return ( <WelcomeUser userInfo={userName && userName}/> )
 }
 
 export default User;

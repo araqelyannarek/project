@@ -8,7 +8,7 @@ import {useEffect, useState} from "react";
 const Cart: NextPage = () => {
     const router = useRouter()
     const id = router.query.id
-    const data = priceData[id]
+    const data = priceData[1]
 
     const [progress, setProgress] = useState(data)
 

@@ -9,7 +9,7 @@ import {
 import UserPage from "../user-page/UserPage";
 
 interface userInterface {
-  userInfo: string
+  userInfo?: string | null
 }
 
 function WelcomeUser({userInfo}:userInterface) {
@@ -20,7 +20,7 @@ function WelcomeUser({userInfo}:userInterface) {
                      <Heading fontWeight={600} fontSize={{ base: '1xl', sm: '2xl', md: '4xl' }} lineHeight={'110%'}>
                          Welcome
                         <Text as={'span'} mx="2" color={'#255DB1'}>
-                            {userInfo}
+                            {userInfo && userInfo}
                          </Text>
                          manage your Connect2HQ Account
                     </Heading>

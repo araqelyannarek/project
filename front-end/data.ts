@@ -1,4 +1,23 @@
-const priceData = [
+interface textType { 
+    id: number
+    info: string
+}
+
+interface descriptionType { 
+    id: number
+    title: string
+    text: Array<textType>
+}
+
+export interface priceDataType {
+    id: number
+    category: string
+    price: string
+    info: string
+    description:Array<descriptionType>
+}
+
+const priceData:Array<priceDataType> = [
     {
         id: 1,
         category: "Lite",

@@ -17,22 +17,8 @@ import { FaCheckCircle } from 'react-icons/fa';
 import {NextPage} from "next";
 import styles from "../../styles.module.css"
 import {useRouter} from "next/router";
-import priceData from '../../data.js'
+import priceData from '../../data'
 import {checkout} from '../../checkout'
-
-function PriceWrapper({ children }: { children: ReactNode }) {
-    return (
-        <Box
-            mb={4}
-            shadow="base"
-            borderWidth="1px"
-            alignSelf={{ base: 'center', lg: 'flex-start' }}
-            borderColor={useColorModeValue('gray.200', 'gray.500')}
-            borderRadius={'xl'}>
-            {children}
-        </Box>
-    );
-}
 
 const Pricing: NextPage = () => {
     const [value, setValue] = useState(false);
@@ -61,24 +47,24 @@ const Pricing: NextPage = () => {
         setValue(!value)
         setInfo('You save ' + percent + '% annually!')
     }
-
-    const handleSubmitButton = (id) => {
-        router.push({
-            pathname: '/my-cart/',
-            query: { id: id },
-        })
-    }
+    
+    // const handleSubmitButton = (id:any) => {
+    //     router.push({
+    //         pathname: '/my-cart/',
+    //         query: { id: id },
+    //     })
+    // }
 
     return (
-        <Box py={20}>
-            <VStack spacing={2} textAlign="center">
+        <Box py={20} style={{letterSpacing: '2'}}>
+            <Box textAlign="center">
                 <Heading as="h1" fontSize="2xl">
                     Connect2HQ Pricing Plans
                 </Heading>
                 <Text fontSize="4xl" color={'gray.500'}>
                     Plans that fit your need
                 </Text>
-            </VStack>
+            </Box>
 
             <Flex justifyContent={'center'} my={4} alignItems={'center'}>
                 <Heading mr={4} as="h1" fontSize="xl">
@@ -92,7 +78,7 @@ const Pricing: NextPage = () => {
                     type="checkbox"
                 />
                 <label
-                    style={{ background: value && 'white' }}
+                    style={{ background: value && 'white' || "" }}
                     className={styles.reactSwitchLabel}
                     htmlFor={`react-switch-new`}
                 >
@@ -112,9 +98,15 @@ const Pricing: NextPage = () => {
                 {
                     priceData.map((priceInfo, index) => {
                         return (
-                            <PriceWrapper
+                            <Box
+                                mb={4}
+                                shadow="base"
+                                borderWidth="1px"
+                                alignSelf={{ base: 'center', lg: 'flex-start' }}
+                                borderColor={'gray.200'}
+                                borderRadius={'xl'}
                                 key={index}
-                                bg={useColorModeValue('white', 'gray.800')}
+                                bg={'white'}
                                 boxShadow={'2xl'}
                                 rounded={'md'}
                                 overflow={'hidden'}
@@ -127,7 +119,7 @@ const Pricing: NextPage = () => {
                                         fontSize={'lg'}
                                         fontWeight={700}
                                         rounded={'10px'}
-                                        bg={useColorModeValue('blue.50', 'blue.900')}
+                                        bg={'blue.50'}
                                         p={2}
                                         color={'#255DB1'}
                                     >
@@ -151,7 +143,7 @@ const Pricing: NextPage = () => {
                                 </Box>
                                 <VStack
                                     width={'400px'}
-                                    bg={useColorModeValue('gray.50', 'gray.700')}
+                                    bg={'gray.50'}
                                     py={4}
                                     borderBottomRadius={'xl'}>
                                     <List spacing={3} textAlign="start" py={4} px={12}>
@@ -210,7 +202,7 @@ const Pricing: NextPage = () => {
                                     </Box>
 
                                 </VStack>
-                            </PriceWrapper>
+                            </Box>
                         )
                     })
                 }

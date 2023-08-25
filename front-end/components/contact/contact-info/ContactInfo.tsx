@@ -10,7 +10,6 @@ import {
     HStack,
     Wrap,
     WrapItem,
-    useColorModeValue,
     Stack,
     StackDivider,
 } from '@chakra-ui/react';
@@ -29,7 +28,7 @@ export default function contact() {
             </VStack>
             <Flex>
                 <Box
-                    bg={useColorModeValue('white', 'gray.700')}
+                    bg={'white'}
                     color="white"
                     borderRadius="lg"
                     m={{ sm: 4, md: 16, lg: 10 }}
@@ -45,7 +44,7 @@ export default function contact() {
                                                 color={'#255DB1'}
                                                 fontWeight={'800'}
                                                 fontSize={'xl'}
-                                                bg={useColorModeValue('blue.50', 'blue.900')}
+                                                bg={'blue.50'}
                                                 p={2}
                                                 alignSelf={'flex-start'}
                                                 rounded={'md'}>
@@ -64,7 +63,7 @@ export default function contact() {
                                                 spacing={4}
                                                 divider={
                                                     <StackDivider
-                                                        borderColor={useColorModeValue('gray.400', 'gray.800')}
+                                                        borderColor={'gray.400'}
                                                     />
                                                 }>
                                                 <Flex alignItems={"center"} px={'20px'} >

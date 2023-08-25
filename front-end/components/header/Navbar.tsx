@@ -5,7 +5,6 @@ import {
     IconButton,
     Box,
     Flex,
-    useColorModeValue,
     useDisclosure,
     Button,
     Collapse,
@@ -45,13 +44,13 @@ export default function Navbar() {
         <Box>
             <Flex
                 shadow={'md'}
-                bg={useColorModeValue('gray.50', 'gray.900')}
-                color={useColorModeValue("purple.900", "white")}
+                bg={'gray.50'}
+                color={"purple.900"}
                 minH={"60px"}
                 px={{ base: 4, md: 20, lg: 16 }}
                 borderBottom={1}
                 borderStyle={"solid"}
-                borderColor={useColorModeValue("blue.100", "gray.900")}
+                borderColor={"blue.100"}
                 align={"center"}
             >
                 <Flex
@@ -126,7 +125,7 @@ export default function Navbar() {
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
-                <Stack bg={useColorModeValue("white", "blue.800")} p={4} display={{ md: "none" }} >
+                <Stack bg={"white"} p={4} display={{ md: "none" }} >
                     {NAV_ITEMS.map((navItem) => (
                         <MobileNavItem key={navItem.label} {...navItem} />
                     ))}

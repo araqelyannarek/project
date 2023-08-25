@@ -163,7 +163,7 @@ const SignUp = () => {
                             <Stack direction={{ base: 'column', sm: 'row' }} align={'start'} justify={'space-between'}>
                                 <Checkbox
                                     isChecked={checkedItems[0]}
-                                    onChange={(e) => setCheckedItems([e.target.checked, checkedItems[1]])}
+                                    onChange={(e: any) => setCheckedItems([e.target.checked, checkedItems[1]])}
                                 >
                                     I agree to the
                                     <Link

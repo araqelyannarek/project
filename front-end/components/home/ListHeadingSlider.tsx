@@ -34,6 +34,7 @@ const Slide = ({ title, info, bgColor, image }: SlideProps) => {
                 }}
             >
                 <Image
+                    alt=""
                     src={image}
                     height={'120'}
                     width={'100'}

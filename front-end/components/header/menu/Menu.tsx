@@ -1,6 +1,5 @@
 import {
     Box,
-    Flex,
     Popover,
     PopoverTrigger,
     Stack,
@@ -19,7 +18,7 @@ const DesktopNav = () => {
                 <Box key={navItem.label}>
                     <Popover trigger={"hover"} placement={"bottom-start"}>
                         <PopoverTrigger>
-                            <Link href={navItem.href}>
+                            <Link passHref={true} href={navItem.href}>
                                 <Text
                                     fontSize={"lg"}
                                     fontFamily={'Serif'}
@@ -58,7 +57,7 @@ interface NavItem {
     label: string
     subLabel?: string
     children?: Array<NavItem>
-    href?: string
+    href: string
 }
 
 const NAV_ITEMS: Array<NavItem> = [
