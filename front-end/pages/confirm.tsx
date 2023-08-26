@@ -10,7 +10,7 @@ import {
     useColorModeValue
 } from '@chakra-ui/react';
 
-import { Auth } from 'aws-amplify';
+// import { Auth } from 'aws-amplify';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -38,7 +38,7 @@ const SignIn: NextPage = () => {
         }
 
         try {
-            await Auth.confirmSignUp(email, confirmationCode.value);
+            // await Auth.confirmSignUp(email, confirmationCode.value);
             localStorage.removeItem('pending_verification_email');
             router.push('/signin');
         } catch (error) {
