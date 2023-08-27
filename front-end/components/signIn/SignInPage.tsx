@@ -40,7 +40,7 @@ const SignIn = () => {
         }
         
         const JSONdata = JSON.stringify(data);
-        const endpoint ='http://localhost:5000/api/auth/sign-in';
+        const endpoint ='http://52.221.234.247/api/auth/sign-in';
 
         const options = {
             method: 'POST',
