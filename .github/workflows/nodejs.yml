@@ -11,7 +11,12 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: My first step
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
         run: pm2 restart all
 
 # name: Node.js CI/CD
