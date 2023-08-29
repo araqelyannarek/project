@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-        run: pm2 restart all
+      - run: pm2 restart all
 
 # name: Node.js CI/CD
 
