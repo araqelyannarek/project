@@ -22,6 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci  # or yarn install
+        working-directory: project/front-end
       
       - name: Install pm2 globally
         run: npm install -g pm2  # Install pm2 globally
