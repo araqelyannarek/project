@@ -7,7 +7,7 @@ import ListHeadingSlider from "../components/home/ListHeadingSlider";
 export default function Index() {
     const [username, setUsername] = useState<string|null>("");
     useEffect(() => {
-        let user = localStorage.getItem("user_token");
+        let user = localStorage.getItem("user_name");
         setUsername(user)
     }, []);
     

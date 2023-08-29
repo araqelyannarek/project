@@ -14,10 +14,10 @@ const MobileNav = () => {
 
 const MobileNavItem = ({label, children, href}: NavItem) => {
     const {isOpen, onToggle} = useDisclosure()
-    const route = useRouter()
+    const router = useRouter()
 
     const clickHref = async (href: any) => {
-        route.push(href)
+        router.push(href)
     }
 
     return (

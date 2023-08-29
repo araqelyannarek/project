@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import {useRouter} from "next/router";
 import {FiChevronDown} from "react-icons/fi";
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from 'react';
 
 interface MobileProps extends FlexProps {
     onOpen: () => void;
@@ -24,23 +24,29 @@ interface MobileProps extends FlexProps {
 }
 
 const MobileNav = ({ onOpen, userInfo, ...rest }: MobileProps) => {
-    const route = useRouter()    
+    const router = useRouter();
+    const [username, setUsername] = useState<string | null>(null);  
+
+    useEffect(() => {
+        let user = localStorage.getItem("user_name");
+            setUsername(user);
+    }, [router]);  
 
     const signOut = () => {
         localStorage.clear()
-        route.push('/')
+        router.push('/')
     }
 
     const signProfile = () => {
-        route.push('/user-profile')
+        router.push('/user-profile')
     }
 
     const signInPage = async () => {
-        route.push('/signin');
+        router.push('/signin');
     }
 
     const signUpPage = async () => {
-        route.push('/signup');
+        router.push('/signup');
     }
 
     return (

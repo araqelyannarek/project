@@ -8,7 +8,7 @@ const User: NextPage = () => {
     useEffect(() => {
       const user = localStorage.getItem("user_name")
       setUsername(user || ''); 
-    }, [])
+    }, [])    
   
 
     return ( <WelcomeUser userInfo={userName && userName}/> )
