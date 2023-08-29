@@ -17,18 +17,21 @@ const SignIn = () => {
     const [userName, setUserName] = useState("");
     const [email, setEmail] = useState({ value: '', isValid: true });
     const [password, setPassword] = useState({ value: '', isValid: true });
-    const [userToken, setUserToken] = useState("");
+    
+    const [userToken, setUserToken] = useState('');
 
     const [errorMessage, setErrorMessage] = useState('')
     const [isLoading, setIsLoading] = useState(false);
     const router = useRouter();
-
+    
     useEffect(() => {
         localStorage.setItem("user_token", userToken);
         localStorage.setItem("user_name", userName);
         localStorage.setItem("user_email", email.value);
     }, [userToken]);
 
+    
+    
     const setInput =
         (setter: (inp: { value: string; isValid: boolean }) => void) => (e: React.ChangeEvent<HTMLInputElement>) => {
             setter({ value: e.target.value, isValid: true });
