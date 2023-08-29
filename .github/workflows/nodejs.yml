@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: My first step
-        run: echo This is the first step of my first job.
+        run: pm2 restart all
 
 # name: Node.js CI/CD
 
