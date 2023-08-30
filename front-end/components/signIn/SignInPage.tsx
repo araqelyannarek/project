@@ -117,7 +117,7 @@ const SignIn = () => {
                                 color={'white'}
                                 _hover={{ bg: '#3D7DD6' }}
                              >
-                                Sign innnnnnnnnnn
+                                Sign innnnnnnnnnnnn
                             </Button>
                         </Stack>     
                         <Text align={'center'} color={'red.500'}>{errorMessage}</Text>
