@@ -17,13 +17,13 @@ jobs:
       #  uses: actions/setup-node@v3
       #  with:
       #    node-version: ${{ matrix.node-version }}
-      - name: change directory
+     - name: change directory
        run: cd front-end/
 
-      - name: Install dependencies
+     - name: Install dependencies
        run: yarn install --frozen-lockfile
-      - name: path
-        run: pwd
+     - name: path
+       run: pwd
         
-      - name: Restart using pm2
-        run: pm2 restart all
+     - name: Restart using pm2
+       run: pm2 restart all
