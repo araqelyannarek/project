@@ -12,16 +12,16 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    #  - uses: actions/checkout@v3
-     # - name: Use Nodejs ${{ matrix.node-version }}
+     - uses: actions/checkout@v3
+     - name: Use Nodejs ${{ matrix.node-version }}
       #  uses: actions/setup-node@v3
-       # with:
-        #  node-version: ${{ matrix.node-version }}
-      #- name: change directory
-       # run: cd front-end/
+      #  with:
+      #    node-version: ${{ matrix.node-version }}
+      - name: change directory
+       run: cd front-end/
 
-      #- name: Install dependencies
-       # run: yarn install --frozen-lockfile
+      - name: Install dependencies
+       run: yarn install --frozen-lockfile
       - name: path
         run: pwd
         
