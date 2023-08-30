@@ -8,52 +8,22 @@ on:
       branches: [ "main" ]
 
 jobs:
-  job_1:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: self-hosted
+
     steps:
-      - uses: actions/checkout@v3
+    #  - uses: actions/checkout@v3
+     # - name: Use Nodejs ${{ matrix.node-version }}
+      #  uses: actions/setup-node@v3
+       # with:
+        #  node-version: ${{ matrix.node-version }}
+      #- name: change directory
+       # run: cd front-end/
 
-      - name: Pull
-        uses: actions/super-linter@v3
-        with:
-          node-version: 18
-          cache: 'npm'
-      - name: change directory
-        run: cd front-end/
-
-      - name: Install dependencies
-        run: npm ci  # or yarn install
-        working-directory: project/front-end
-      
-      - name: Install pm2 globally
-        run: npm install -g pm2  # Install pm2 globally
-      
+      #- name: Install dependencies
+       # run: yarn install --frozen-lockfile
+      - name: path
+        run: pwd
+        
       - name: Restart using pm2
         run: pm2 restart all
-
-# name: Node.js CI/CD
-
-# on:
-#   push:
-#     branches: [ "main" ]
-
-# jobs:
-#   build:
-#     runs-on: self-hosted
-    # strategy:
-    #   matrix:
-    #     node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    # steps:
-    # - uses: actions/checkout@v3
-    # - name: Use Node.js
-    #   - run: pm2 restart all
-      # uses: actions/setup-node@v3
-      # with:
-      #   node-version: ${{ matrix.node-version }}
-        # cache: 'npm'
-    # - run: npm ci
-    # - run: |
-    #     touch .env
-    #     echo "${{ secrets.PROD_ENV_FILE }}" > .env
-    
