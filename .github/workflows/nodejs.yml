@@ -10,16 +10,16 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    strategy:
-      matrix:
-        node-version: [18.x]
+    # strategy:
+    #   matrix:
+    #     node-version: [18.x]
 
     steps:
      - uses: actions/checkout@v3
-     - name: Use Nodejs ${{ matrix.node-version }}
-       uses: actions/setup-node@v3
-       with:
-         node-version: ${{ matrix.node-version }}
+    #  - name: Use Nodejs ${{ matrix.node-version }}
+    #    uses: actions/setup-node@v3
+    #    with:
+    #      node-version: ${{ matrix.node-version }}
      - name: change directory
        run: cd front-end/
 
