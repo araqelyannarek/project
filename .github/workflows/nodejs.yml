@@ -27,6 +27,7 @@ jobs:
        run: |
         cd front-end/
         rm package-lock.json
+        rm -rf node_modules/
         yarn install
     
      - name: Install dependencies back
