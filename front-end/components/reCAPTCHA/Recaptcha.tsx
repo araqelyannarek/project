@@ -8,7 +8,7 @@ function Recaptcha() {
 
     return (
         <ReCAPTCHA
-            sitekey="6LdVobInAAAAAEqLVE1otFWb2aA0sefNhWpHP-YE"
+            sitekey="6LelP-0nAAAAADUxIqMH2mmQOvFu0AuMTk-20huZ"
             onChange={onChange}
         />
     );

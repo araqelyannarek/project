@@ -20,7 +20,6 @@ module.exports = class AuthService extends BaseService {
         return err.body;
       }
 
-
       const response = await axios.post(
         `https://www.google.com/recaptcha/api/siteverify`,
         null,
@@ -33,7 +32,7 @@ module.exports = class AuthService extends BaseService {
       );
  
       const data = response.data;
-
+console.log(data);
       if (!data.success) {
         return this.response({
             status: false,

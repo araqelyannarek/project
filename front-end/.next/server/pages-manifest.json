@@ -1,9 +1,9 @@
 {
   "/_app": "pages/_app.js",
   "/about": "pages/about.html",
-  "/contact": "pages/contact.html",
   "/_error": "pages/_error.js",
   "/confirm": "pages/confirm.html",
+  "/contact": "pages/contact.html",
   "/": "pages/index.html",
   "/my-cart": "pages/my-cart.html",
   "/payment-info": "pages/payment-info.html",
@@ -11,8 +11,8 @@
   "/signin": "pages/signin.html",
   "/privacy": "pages/privacy.html",
   "/signup": "pages/signup.html",
-  "/terms": "pages/terms.html",
   "/user-profile": "pages/user-profile.html",
+  "/terms": "pages/terms.html",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

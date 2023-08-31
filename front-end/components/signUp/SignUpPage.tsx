@@ -186,7 +186,7 @@ const SignUp = () => {
                             </Stack>
                             {/* <Recaptcha /> */}
                             <ReCAPTCHA
-                                sitekey="6Le82LInAAAAABATfw250Pu4dasIKax2FS3pexn8"
+                                sitekey="6LelP-0nAAAAADUxIqMH2mmQOvFu0AuMTk-20huZ"
                                 ref={recaptchaRef}
                                 onChange={onReCAPTCHAChange}
                             />
