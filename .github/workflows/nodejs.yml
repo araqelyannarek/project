@@ -10,9 +10,9 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    # strategy:
-    #   matrix:
-    #     node-version: [18.x]
+    strategy:
+      matrix:
+        node-version: [18.x]
 
     steps:
      - uses: actions/checkout@v3
@@ -27,7 +27,7 @@ jobs:
        run: cd front-end/
        run: yarn install
     
-    - name: Install dependencies back
+     - name: Install dependencies back
        run: cd ../back-end/
        run: yarn install
            
