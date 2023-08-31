@@ -24,12 +24,14 @@ jobs:
     #    run: git pull
 
      - name: Install dependencies front
-       run: cd front-end/
-       run: yarn install
+       run: |
+        cd front-end/
+        yarn install
     
      - name: Install dependencies back
-       run: cd ../back-end/
-       run: yarn install
+       run: |
+        cd ../back-end/
+        yarn install
            
      - name: Restart using pm2
        run: pm2 restart all
