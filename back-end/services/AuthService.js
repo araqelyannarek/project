@@ -14,7 +14,6 @@ module.exports = class AuthService extends BaseService {
     try {
       const { name, email, password } = req.body;
       const recaptchaResponse = req.body['g-recaptcha-response'];
-      console.log(req.body);
 
       const err = this.handleErrors(req);
       if(err.hasErrors) {
