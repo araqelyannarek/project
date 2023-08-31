@@ -23,13 +23,13 @@ jobs:
     #  - name: Pull repo
     #    run: git pull
 
-     - name: change directory
+     - name: Install dependencies front
        run: cd front-end/
-
-     - name: Install dependencies
-       run: yarn install --frozen-lockfile
-     - name: path
-       run: pwd
-        
+       run: yarn install
+    
+    - name: Install dependencies back
+       run: cd ../back-end/
+       run: yarn install
+           
      - name: Restart using pm2
        run: pm2 restart all
