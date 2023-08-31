@@ -41,9 +41,10 @@ const SignIn = () => {
             email: email.value,
             password: password.value
         }
-        
+        const apiUrl = process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_API_URL_PROD : process.env.NEXT_PUBLIC_API_URL_LOCAL;
+      
         const JSONdata = JSON.stringify(data);
-        const endpoint =`${process.env.API_URL}/api/auth/sign-in`;
+        const endpoint =`${apiUrl}/api/auth/sign-in`;
 
         const options = {
             method: 'POST',

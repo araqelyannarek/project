@@ -58,9 +58,9 @@ const SignUp = () => {
             password: password.value,
             "g-recaptcha-response": recaptchaRef.current.getValue(),
         }
-        
+        const apiUrl = process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_API_URL_PROD : process.env.NEXT_PUBLIC_API_URL_LOCAL;
         const JSONdata = JSON.stringify(data);
-        const endpoint =`${process.env.API_URL}/api/auth/sign-up`;
+        const endpoint =`${apiUrl}/api/auth/sign-up`;
 
         const options = {
             method: 'POST',
