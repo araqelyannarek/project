@@ -34,7 +34,7 @@ module.exports = class AuthService extends BaseService {
       );
  
       const data = response.data;
-      console.log(data);
+
       if (!data.success) {
         return this.response({
             status: false,
@@ -65,14 +65,12 @@ module.exports = class AuthService extends BaseService {
 
       if(createUser) {
 
-        const token = createToken({
-          payload: {
-            id: createUser._id
-          }
-        });
-
         return this.response({
-          data: { token },
+          data: {
+            id: createUser.id,
+            name: createUser.name,
+            email: createUser.email
+          },
           statusCode: 201,
           message: 'User Registered succesfully'
         });
@@ -101,6 +99,9 @@ module.exports = class AuthService extends BaseService {
           const token = createToken({
             payload: {
               id: user._id
+            },
+            options: {
+              expiresIn: "1h",
             }
           });
 
