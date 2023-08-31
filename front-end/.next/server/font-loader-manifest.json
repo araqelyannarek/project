@@ -1,8 +1,5 @@
 {
-  "pages": {
-    "/": [],
-    "/about": []
-  },
+  "pages": {},
   "app": {},
   "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false
