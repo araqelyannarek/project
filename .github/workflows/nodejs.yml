@@ -26,6 +26,7 @@ jobs:
      - name: Install dependencies front
        run: |
         cd front-end/
+        rm package-lock.json
         yarn install
     
      - name: Install dependencies back
