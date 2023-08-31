@@ -43,7 +43,7 @@ const SignIn = () => {
         }
         
         const JSONdata = JSON.stringify(data);
-        const endpoint ='http://54.255.160.119/api/auth/sign-in';
+        const endpoint =`${process.env.API_URL}/api/auth/sign-in`;
 
         const options = {
             method: 'POST',

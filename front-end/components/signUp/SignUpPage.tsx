@@ -60,7 +60,7 @@ const SignUp = () => {
         }
         
         const JSONdata = JSON.stringify(data);
-        const endpoint ='http://54.255.160.119/api/auth/sign-up';
+        const endpoint =`${process.env.API_URL}/api/auth/sign-up`;
 
         const options = {
             method: 'POST',
