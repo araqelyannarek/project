@@ -33,6 +33,8 @@ jobs:
      - name: Install dependencies back
        run: |
         cd ../back-end/
+        rm package-lock.json
+        rm -rf node_modules/
         yarn install
            
      - name: Restart using pm2
